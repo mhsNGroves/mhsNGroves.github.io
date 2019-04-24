@@ -11,7 +11,7 @@ let hit = false;
 
 function preload() {
 
-  img = loadImage('cryingemoji.jpg');
+  img = loadImage('CryingEmojji.png');
 
 }
 
