@@ -31,6 +31,7 @@ if (hit===true) {
   background(255,0,0);
   image(img,430,200);
   textSize(50);
+  fill(0);
   text('GAME OVER',width/2-120,height/2);
 
 }
