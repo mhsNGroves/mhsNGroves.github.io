@@ -20,7 +20,7 @@ function preload() {
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
-  
+}
 function draw() {
   // put drawing code here
   hit = collideRectRect(x1,y,size,size,x2,y,size,size);
@@ -66,7 +66,8 @@ function mousePressed() {
     // .isPlaying() returns a boolean
     mySound.stop();
     background(255, 0, 0);
-  } else {
+  } 
+    else {
     mySound.play();
     background(0, 255, 0);
 
