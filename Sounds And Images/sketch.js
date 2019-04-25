@@ -32,7 +32,7 @@ function draw() {
 if (hit===true) {
   background(255,0,0);
   image(img,430,200);
-  mySound.volume(1);
+  mySound.setVolume(1);
   mySound.play();
   textSize(50);
   fill(0);
