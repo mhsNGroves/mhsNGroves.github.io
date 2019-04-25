@@ -1,4 +1,5 @@
 let img;
+let mySound;
 let x1 = 0
 let x2 = 600
 let y = 300
@@ -12,6 +13,7 @@ let hit = false;
 function preload() {
 
   img = loadImage('CryingEmojji.png');
+  mySound = loadSound('SonicBoom.mp3');
 
 }
 
@@ -30,6 +32,8 @@ function draw() {
 if (hit===true) {
   background(255,0,0);
   image(img,430,200);
+  mySound.volume(1);
+  mySound.play();
   textSize(50);
   fill(0);
   text('GAME OVER',width/2-120,height/2);
