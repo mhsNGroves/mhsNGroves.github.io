@@ -20,9 +20,7 @@ function preload() {
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
-  mySound.setVolume(0.1);
-  mySound.play();
-}
+  
 function draw() {
   // put drawing code here
   hit = collideRectRect(x1,y,size,size,x2,y,size,size);
@@ -33,6 +31,8 @@ function draw() {
 if (hit===true) {
   background(255,0,0);
   image(img,430,200);
+  mySound.setVolume(0.1);
+  mySound.play();
   textSize(50);
   fill(0);
   text('GAME OVER',width/2-120,height/2);
