@@ -59,3 +59,16 @@ if (x2>width || x2<0) {
   }
  }
 }
+
+
+function mousePressed() {
+  if (mySound.isPlaying()) {
+    // .isPlaying() returns a boolean
+    mySound.stop();
+    background(255, 0, 0);
+  } else {
+    mySound.play();
+    background(0, 255, 0);
+
+  }
+}
