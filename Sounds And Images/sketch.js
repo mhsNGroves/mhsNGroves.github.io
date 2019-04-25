@@ -29,10 +29,9 @@ function draw() {
   print(hit)
 
 if (hit===true) {
+  mySound.play();
   background(255,0,0);
   image(img,430,200);
-  mySound.setVolume(0.1);
-  mySound.play();
   textSize(50);
   fill(0);
   text('GAME OVER',width/2-120,height/2);
@@ -61,15 +60,4 @@ if (x2>width || x2<0) {
 }
 
 
-function mousePressed() {
-  if (mySound.isPlaying()) {
-    // .isPlaying() returns a boolean
-    mySound.stop();
-    background(255, 0, 0);
-  } 
-    else {
-    mySound.play();
-    background(0, 255, 0);
 
-  }
-}
