@@ -1,3 +1,9 @@
+/*    Nicholas Groves
+    "Sounds And Images"
+     April 25th, 2019
+  Revised: May 8th, 2019   */
+
+//Global Variables
 let img;
 let mySound;
 let x1 = 0
@@ -11,7 +17,7 @@ let x2Speed = 10
 let hit = false;
 
 function preload() {
-
+// loads images and sounds that will be used in this program
   img = loadImage('CryingEmojji.png');
   mySound = loadSound('SonicBoom.mp3');
 
@@ -28,7 +34,7 @@ function draw() {
 //Output a statement to console
   print(hit)
 
-if (hit===true) {
+if (hit===true) {    // if the squares collide together, run this part of the program
   mySound.play();
   background(255,0,0);
   image(img,430,200);
@@ -38,7 +44,7 @@ if (hit===true) {
 
 }
 
-else {
+else {    // if they don't collide, run this part of the program
   background(0);
   fill(127);
   rect(x1,y,size,size);
