@@ -1,12 +1,11 @@
 function setup() {
-  // put setup code here
-createCanvas(2000,1600);
+ // put setup code here
+  createCanvas(2000,1600);
 
 }
 
-
 function draw() {
-  // put drawing code here
+ // put drawing code here
   let x=300 //don't scale this value
   let y=400 //don't scale this value
   let houseWidth=100 //don't scale this value beyond 120
@@ -26,7 +25,8 @@ function draw() {
   fill(100);
   triangle(x,y,x+houseWidth*2.75,y-houseWidth*2,x+houseWidth*5.5,y); //roof of house
   fill(255);
- //door
+ 
+  //door
   fill(153,51,0);
   rect(x+houseWidth*2.4,y+houseWidth*3,houseWidth*0.9,houseWidth*1.5);
   fill(255);
@@ -43,7 +43,7 @@ function draw() {
   line(x+houseWidth*2.5,y-houseWidth*0.75,x+houseWidth*3,y-houseWidth*0.75); //window line 1
   line(x+houseWidth*2.75,y-houseWidth*0.5,x+houseWidth*2.75,y-houseWidth); //window line 2
 
-//windows on the house
+ //windows on the house
   fill(153,204,255);
   rect(x+houseWidth*0.65,y+houseWidth,houseWidth*0.75,houseWidth*0.75); //window 1
   fill(255);
@@ -54,9 +54,4 @@ function draw() {
   fill(255);
   line(x+houseWidth*4.05,y+houseWidth*1.38,x+houseWidth*4.8,y+houseWidth*1.38);
   line(x+houseWidth*4.425,y+houseWidth,x+houseWidth*4.425,y+houseWidth*1.75);
-
-
-
-
-
 }
