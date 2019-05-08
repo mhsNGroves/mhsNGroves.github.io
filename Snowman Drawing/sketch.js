@@ -1,3 +1,8 @@
+/*     Nicholas Groves
+      "Snowman Drawing"
+       March 6th, 2019
+   Revised: May 8th, 2019*/
+
 function setup() {
 // put setup code here
   createCanvas(1000,600);
