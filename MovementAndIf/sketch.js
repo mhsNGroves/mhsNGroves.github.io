@@ -1,3 +1,9 @@
+/*        Nicholas Groves
+  "Moving Things Around Assignment"
+          April 9th, 2019 
+        Revised: May 8th, 2019         */
+
+
 //Global Varibales
 let x = 100;
 let y = 100;
@@ -9,7 +15,7 @@ let size = 100;
 
 function setup() {
   // put setup code here
-createCanvas(600,800);
+  createCanvas(600,800);
 
 
 }
@@ -18,16 +24,16 @@ createCanvas(600,800);
 function draw() {
 // put drawing code here
 //Change the background
-background(29,127,17);
-//Draw the rectangle
-fill(255,0,67);
-ellipse(x,y,size,size);
+  background(29,127,17);
+//Draw the ellipse
+  fill(255,0,67);
+  ellipse(x,y,size,size);
 
-drawlines();
-
-//Move the rectangle
-x+=xSpeed;
-y = y + ySpeed;
+  drawlines();
+  
+//Move the ellipse
+  x+=xSpeed;
+  y = y + ySpeed;
 
 if (y+size>=height/0.95) {
   ySpeed = ySpeed*(-1);
@@ -46,11 +52,11 @@ if (x<=115) {
 }
 }
 function drawlines() {
-
-fill(255);
-rect(300,0,10,800);
-noStroke();
-fill(29,127,17);
-rect(520,0,80,800);
-rect(0,0,80,800);
+//Setup for the ping-pong table
+  fill(255);
+  rect(300,0,10,800);
+  noStroke();
+  fill(29,127,17);
+  rect(520,0,80,800);
+  rect(0,0,80,800);
 }
