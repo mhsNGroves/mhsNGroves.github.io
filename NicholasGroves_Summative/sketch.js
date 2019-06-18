@@ -2,7 +2,7 @@
 
 
 /* GLOBAL VARIABLES */
- let level = 10;
+ let level = 0;
  let img;
  let followMouse = false;
  let endgame = false;
